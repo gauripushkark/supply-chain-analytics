@@ -39,14 +39,14 @@ This project simulates a real-world supply chain environment to track:
 
 ## 🧱 Project Structure
 
-data/
-raw/ → Raw input datasets
-cleaned/ → Processed datasets
+- data/
+- raw/ → Raw input datasets
+- cleaned/ → Processed datasets
 
-sql/ → KPI queries and transformations
-notebooks/ → Python analysis
-dashboard/ → Visualization files
-docs/ → Business problem and KPI definitions
+- sql/ → KPI queries and transformations
+- notebooks/ → Python analysis
+- dashboard/ → Visualization files
+- docs/ → Business problem and KPI definitions
 
 ---
 
