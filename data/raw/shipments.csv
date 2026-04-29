@@ -1,0 +1,9 @@
+shipment_id,facility,arrival_date,processed_date,processing_type,container_count
+S001,Facility_A,2026-01-01 08:00,2026-01-01 18:00,expedited,120
+S002,Facility_B,2026-01-02 09:00,2026-01-03 15:00,standard,200
+S003,Facility_A,2026-01-03 07:30,2026-01-03 16:00,expedited,150
+S004,Facility_C,2026-01-04 10:00,2026-01-06 12:00,standard,300
+S005,Facility_B,2026-01-05 11:00,,pending,180
+S006,Facility_A,2026-01-06 06:00,2026-01-06 14:00,expedited,140
+S007,Facility_C,2026-01-07 12:00,,pending,220
+S008,Facility_B,2026-01-08 08:00,2026-01-09 17:00,standard,260
