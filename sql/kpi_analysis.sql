@@ -86,3 +86,33 @@ SELECT
 FROM shipments
 WHERE processed_date IS NOT NULL
 GROUP BY facility;
+
+-- KPI 5: Item backlog by facility and category
+SELECT
+    facility,
+    item_category,
+    COUNT(*) AS backlog_items
+FROM inventory_items
+WHERE item_status = 'Backlog'
+GROUP BY facility, item_category
+ORDER BY facility, item_category;
+
+
+-- KPI 6: Shipment-to-item processing summary
+SELECT
+    s.shipment_id,
+    s.facility,
+    s.processing_type,
+    s.container_count,
+    COUNT(i.item_id) AS item_count,
+    SUM(CASE WHEN i.item_status = 'Processed' THEN 1 ELSE 0 END) AS processed_items,
+    SUM(CASE WHEN i.item_status = 'Backlog' THEN 1 ELSE 0 END) AS backlog_items
+FROM shipments s
+LEFT JOIN inventory_items i
+    ON s.shipment_id = i.shipment_id
+GROUP BY
+    s.shipment_id,
+    s.facility,
+    s.processing_type,
+    s.container_count
+ORDER BY s.shipment_id;
