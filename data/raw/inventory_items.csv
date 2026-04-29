@@ -1,0 +1,13 @@
+item_id,shipment_id,facility,item_category,item_status,received_date,processed_date
+I001,S001,Facility_A,Electronics,Processed,2026-01-01 08:30,2026-01-01 17:30
+I002,S001,Facility_A,Electronics,Processed,2026-01-01 08:45,2026-01-01 17:45
+I003,S002,Facility_B,Appliance,Processed,2026-01-02 09:30,2026-01-03 14:00
+I004,S002,Facility_B,Furniture,Processed,2026-01-02 09:45,2026-01-03 14:30
+I005,S003,Facility_A,Electronics,Processed,2026-01-03 08:00,2026-01-03 15:30
+I006,S004,Facility_C,Appliance,Processed,2026-01-04 10:30,2026-01-06 11:30
+I007,S005,Facility_B,Electronics,Backlog,2026-01-05 11:30,
+I008,S005,Facility_B,Furniture,Backlog,2026-01-05 11:45,
+I009,S006,Facility_A,Appliance,Processed,2026-01-06 06:30,2026-01-06 13:30
+I010,S007,Facility_C,Electronics,Backlog,2026-01-07 12:30,
+I011,S008,Facility_B,Furniture,Processed,2026-01-08 08:30,2026-01-09 16:30
+I012,S008,Facility_B,Electronics,Processed,2026-01-08 08:45,2026-01-09 16:45
